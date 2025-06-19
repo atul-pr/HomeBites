@@ -270,7 +270,26 @@ if(isset($del))
 					  <td></td>
 					  
 					  <td style="padding:30px; text-align:center;">
-					  <a href="order.php?cust_id=<?php echo $cust_id; ?>"><button type="button" style=" color: #5d5d5d; font-weight:bold; text-transform:uppercase;" class="btn btn-warning">Proceed to checkout</button></a>
+
+                      <button type="button" class="btn btn-warning" style="color:#5d5d5d;font-weight:bold;text-transform:uppercase;" onclick="placeOrder()">Proceed to checkout</button>
+
+                        <script>
+                        function placeOrder() {
+                        fetch('order.php?cust_id=<?php echo $cust_id; ?>')
+                            .then(response => {
+                            if (response.ok) {
+                                window.location.href = 'https://rzp.io/rzp/wbn0X7yU'; // Razorpay link
+                            } else {
+                                alert('Error placing order');
+                            }
+                            });
+                        }
+                        </script>
+
+
+</script>
+
+                        </script>
 					  </td>
 					  <td></td>
 					  </tr>

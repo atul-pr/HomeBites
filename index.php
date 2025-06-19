@@ -194,12 +194,19 @@ $re = mysqli_num_rows($query);
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="container">
-        
-        <p><center>&copy; 2025 HomeBites. All rights reserved. | <a href="#">Back to top</a></center></p>
-        <p><center>Follow us on: <i class="fab fa-twitter"></i> <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i></center></p>    
-    </footer>
+   <!-- Footer -->
+<footer class="container">
+    <p><center>
+        &copy; 2025 HomeBites. All rights reserved. |
+        <a href="#">Back to top</a> |
+    </center></p>
+    <p><center>
+        Follow us on:
+        <a href="https://twitter.com/atulxz" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/atul-pr" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/atulxz" target="_blank"><i class="fab fa-instagram"></i></a>
+    </center></p>    
+</footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
